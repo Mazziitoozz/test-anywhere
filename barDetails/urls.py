@@ -10,7 +10,7 @@ router = DefaultRouter()
 router = routers.DefaultRouter(trailing_slash=False)
 
 # Bares
-router.register('barDetalles', views.BarDetallesViewSet)
+router.register('', views.BarDetallesViewSet)
 
 
 app_name = 'barDetails'

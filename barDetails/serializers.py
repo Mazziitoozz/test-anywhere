@@ -1,7 +1,6 @@
 
 from rest_framework import serializers,status
-from core.models import Bares,User, Categorias,PlatosCategorias,MenuBar,MenuIncluye,PlatosValoraciones
-import re
+from core.models import Bares
 from rest_framework.response import Response
 
 class BarDetallesSerializer(serializers.ModelSerializer):

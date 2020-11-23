@@ -25,7 +25,7 @@ SECRET_KEY = '-4y2(g(=0qvhz$j!6kl2@tq%^1$i8^ag1%l%3yq(jdxf$%@_sg'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['mazziitoozzb.pythonanywhere.com']
+ALLOWED_HOSTS = ['mazziitoozzb.pythonanywhere.com','127.0.0.1']
 
 
 # Application definition
@@ -39,9 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework.authtoken',
-    'user',
     'core',
-    'bares',
     'barDetails'
 
 ]
@@ -85,9 +83,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'HOST': 'localhost',
-        'NAME': 'test',
+        'NAME': 'test2',
         'USER': 'postgres',
-        'PASSWORD': 'RRM#Saruman1943',
+        'PASSWORD': '*',
     }
 }
 
@@ -130,13 +128,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = '/home/mazziitoozzb/prueba-bar/static/'
 # Custom User Model
-AUTH_USER_MODEL = 'core.User' # core is the name of our app and User is the name of the model in our app
+# AUTH_USER_MODEL = 'core.User' # core is the name of our app and User is the name of the model in our app
 
-# Send an email
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp-mail.outlook.com'
-EMAIL_PORT = '25'
-EMAIL_HOST_USER = 'robmafer@hotmail.com'
-EMAIL_HOST_PASSWORD = '*'
-EMAIL_USE_TLS = True
-EMAIL_USE_SSL = False
