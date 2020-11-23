@@ -25,7 +25,7 @@ SECRET_KEY = '-4y2(g(=0qvhz$j!6kl2@tq%^1$i8^ag1%l%3yq(jdxf$%@_sg'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mazziitoozzb.pythonanywhere.com']
 
 
 # Application definition
@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'core',
     'bares',
     'barDetails'
-    
+
 ]
 
 MIDDLEWARE = [
@@ -128,7 +128,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-
+STATIC_ROOT = '/home/mazziitoozzb/prueba-bar/static/'
 # Custom User Model
 AUTH_USER_MODEL = 'core.User' # core is the name of our app and User is the name of the model in our app
 
